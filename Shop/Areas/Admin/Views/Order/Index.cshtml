@@ -1,0 +1,63 @@
+﻿@model IEnumerable<OrderModel>
+@{
+    ViewData["title"] = "Danh sách đặt hàng";
+}
+<h2 class="my-4 text-center">DANH SÁCH ĐẶT HÀNG</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Mã đơn hàng</th>
+            <th>Phí ship</th>
+            <th>Tài khoản</th>
+            <th>Trạng thái</th>
+            <th>Phương thức thanh toán</th>
+            <th>Ngày đặt</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>#</td>
+                <td>@item.OrderCode</td>
+                <td>@item.ShippingCode.ToString("#,##0 đ")</td>
+                <td>@item.UserName</td>
+
+
+                <td>
+                    @if (@item.Status == 1)
+                    {
+                        <span class="text text-success">Đơn hàng mới</span>
+                    }
+                    else if (@item.Status == 0)
+                    {
+                        <span class="text text-primary">Đã hoàn thành</span>
+                    }
+                    else
+                    {
+                        <span class="text text-danger">Đã huỷ</span>
+                    }
+                </td>
+                <td>
+                    @if (item.PaymentMethod == "COD")
+                    {
+                        <span class="text text-primary"> @item.PaymentMethod </span>
+                    }
+                    else if (item.PaymentMethod != "COD")
+                    {
+                        <span class="text text-danger"> @item.PaymentMethod </span>
+                    }
+                </td>
+                <td>@item.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>
+                    <a class="btn btn-warning btn-sm" asp-action="ViewOrder" asp-controller="Order" asp-route-ordercode="@item.OrderCode">Chi tiết</a>
+                    <a class="btn btn-danger btn-sm confirmDeletion" asp-action="Delete" asp-controller="Order" asp-route-ordercode="@item.OrderCode">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

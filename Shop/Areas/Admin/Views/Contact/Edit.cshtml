@@ -1,0 +1,49 @@
+﻿@model ContactModel
+@{
+    ViewData["title"] = "Cập Nhật Thông Tin Liên Hệ";
+}
+<h2 class="my-4 text-center">CẬP NHẬT THÔNG TIN LIÊN HỆ</h2>
+<div class="col-md-9">
+    <form asp-action="Edit" asp-controller="Contact" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group">
+            <label>Tên Sản Phẩm</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        
+        <div class="form-group">
+            <label>Bản đồ</label>
+            <textarea asp-for="Map" class="form-control"></textarea>
+            <span asp-validation-for="Map" class="text-danger" />
+        </div>
+        
+        <div class="form-group">
+            <label>Mô Tả</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>SĐT</label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Sửa</button>
+        </div>
+        
+    </form>
+    <a asp-action="Index">Quay về</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

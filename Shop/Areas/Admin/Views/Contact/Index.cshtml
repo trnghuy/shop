@@ -1,0 +1,36 @@
+﻿@model IEnumerable<ContactModel>
+@{
+    ViewData["title"] = "Danh sách liên hệ";
+
+}
+<h2 class="my-4 text-center">LIÊN HỆ</h2>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Mô tả</th>
+            <th>Bản đồ</th>
+            <th>Email</th>
+            <th>SĐT</th>
+            <th>Chức năng</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@Html.Raw(@item.Map)</td>
+                <td>@item.Email</td>
+                <td>@item.Phone</td>
+                <td>
+                    <a class="btn btn-warning btn-sm" asp-action="Edit" asp-controller="Contact">Sửa</a>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>

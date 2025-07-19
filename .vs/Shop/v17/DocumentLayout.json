@@ -1,0 +1,459 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\contact\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\contact\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\product\\addquantity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\product\\addquantity.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\product\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\user\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\user\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\slider\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\shipping\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\role\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\role\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\role\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\order\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\order\\vieworder.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\order\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\brand\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\brand\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|d:\\hutech\\nam_3\\web\\do_an\\web\\shop\\shop\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AC3A5172-5EE2-4893-AD18-7DC3049ADEEA}|Shop\\Shop.csproj|solutionrelative:shop\\areas\\admin\\views\\brand\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 395,
+          "SelectedChildIndex": 15,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\User\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:55:06.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\User\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:55:01.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\User\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:56.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:50.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Slider\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:45.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:41.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Shipping\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:32.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Role\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:15.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Role\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:10.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Role\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:54:03.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:45.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddQuantity.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Product\\AddQuantity.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:40.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ViewOrder.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Order\\ViewOrder.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:31.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Order\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:24.854Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:14.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Contact\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Contact\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Contact\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Contact\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:53:07.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:58.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:51.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:43.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Brand\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:37.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Brand\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:30.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Brand\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:52:23.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:51:57.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Product\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:51:20.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "Shop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Hutech\\Nam_3\\web\\Do_An\\Web\\Shop\\Shop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "Shop\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T13:46:02.391Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

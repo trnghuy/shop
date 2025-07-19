@@ -1,0 +1,130 @@
+﻿@model StatisticaModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container">
+    <h2 class="my-4 text-center">Thống kê quản trị</h2>
+
+    <div class="row mb-4">
+        <div class="col-lg-3 col-sm-6 mb-3">
+            <div class="card bg-light border-primary shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sản phẩm</h5>
+                    <h3 class="text-primary">@ViewBag.CountProduct</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-3">
+            <div class="card bg-light border-success shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Đơn hàng</h5>
+                    <h3 class="text-success">@ViewBag.CountOrder</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-3">
+            <div class="card bg-light border-warning shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Danh mục</h5>
+                    <h3 class="text-warning">@ViewBag.CountCategory</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-3">
+            <div class="card bg-light border-info shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tài khoản</h5>
+                    <h3 class="text-info">@ViewBag.CountUser</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <label for="filter-select" class="form-label">Lọc nhanh</label>
+            <select class="form-select filter-select" id="filter-select">
+                <option value="30">---- Lọc Dữ Liệu ----</option>
+                <option value="7">7 ngày trước</option>
+                <option value="30">Tháng qua</option>
+                <option value="90">3 tháng qua</option>
+                <option value="365">1 năm</option>
+            </select>
+        </div>
+        <div class="col-md-5">
+            <label class="form-label">Tùy chọn theo ngày</label>
+            <div class="input-group mb-3">
+                <input type="date" class="form-control" id="date_from" asp-for="@Model.DateCreated" />
+                <input type="date" class="form-control" id="date_to" asp-for="@Model.DateCreated" />
+                <button id="filterButton" class="btn btn-outline-primary">Lọc</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title">Biểu đồ thống kê doanh thu & số lượng</h5>
+                    <div id="myfirstchart" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var chartMorris = new Morris.Line({
+                element: 'myfirstchart',
+                data: [],
+                xkey: 'date',
+                ykeys: ['sold', 'quantity', 'revenue', 'profit'],
+                labels: ["Số lượng bán ra", "Đơn hàng", "Doanh thu", "Lợi nhuận"],
+                lineColors: ['#0d6efd', '#198754', '#ffc107', '#0dcaf0']
+            });
+
+            function fetchData(url, postData) {
+                $.ajax({
+                    url: url,
+                    type: "POST",
+                    data: postData,
+                    dataType: "json",
+                    success: function (data) {
+                        chartMorris.setData(data.length ? data.map(i => ({ ...i })) : []);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("AJAX error:", status, error);
+                    }
+                });
+            }
+
+            fetchData("@Url.Action("GetChartData", "Dashboard")");
+
+            $('#filter-select').on('change', function () {
+                let days = $(this).val();
+                let end = new Date();
+                let start = new Date();
+                start.setDate(end.getDate() - days);
+
+                fetchData("@Url.Action("GetChartDataBySelect", "Dashboard")", {
+                    startDate: start.toISOString().split('T')[0],
+                    endDate: end.toISOString().split('T')[0]
+                });
+            });
+
+            $('#filterButton').click(function () {
+                let fromDate = $('#date_from').val();
+                let toDate = $('#date_to').val();
+                fetchData("@Url.Action("FilterData", "Dashboard")", {
+                    fromDate: fromDate,
+                    toDate: toDate
+                });
+            });
+        });
+    </script>
+}

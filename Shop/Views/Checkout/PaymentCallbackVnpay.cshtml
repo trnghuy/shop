@@ -1,0 +1,90 @@
+﻿@using Shop.Models.Vnpay
+@model PaymentResponseModel
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Kết quả thanh toán VnPay";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <style>
+        body {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .payment-box {
+            max-width: 600px;
+            margin: 80px auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+            .payment-box h2 {
+                color: #2c3e50;
+                margin-bottom: 25px;
+            }
+
+            .payment-box .info {
+                font-size: 16px;
+                color: #444;
+                margin-bottom: 10px;
+            }
+
+                .payment-box .info strong {
+                    color: #2c3e50;
+                }
+
+        .btn-history {
+            margin-top: 20px;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            color: #fff;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="payment-box">
+        <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Thanh toán thành công qua VnPay!</h2>
+
+        <div class="info"><strong>Mã giao dịch:</strong> @Model.TransactionId</div>
+        <div class="info"><strong>Mã thanh toán:</strong> @Model.PaymentId</div>
+        <div class="info"><strong>Mã đơn hàng:</strong> @Model.OrderId</div>
+
+        <a asp-controller="Account" asp-action="History" class="btn btn-outline-primary btn-history mt-3">
+            Xem lịch sử đơn hàng
+        </a>
+    </div>
+
+    <footer>
+        © 2025 GodaShop - Giao dịch bảo mật qua VnPay
+    </footer>
+
+</body>
+</html>

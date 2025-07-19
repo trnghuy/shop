@@ -1,0 +1,204 @@
+﻿@using Shop.Models.ViewModels
+@model CartItemViewModel
+
+<section id="cart_items" class="py-5">
+    <div class="container">
+        @* <div class="breadcrumbs mb-4"> *@
+        @*     <ol class="breadcrumb"> *@
+        @*         <li><a href="/">Trang chủ</a></li> *@
+        @*         <li class="active">Giỏ hàng</li> *@
+        @*     </ol> *@
+        @* </div> *@
+
+        @if (Model.CartItems.Any())
+        {
+            <div class="table-responsive mb-4">
+                <table class="table table-bordered table-hover text-center">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Hình ảnh</th>
+                            <th>Sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.CartItems)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="~/media/products/@item.Image" alt="@item.ProductName" width="70" height="100" />
+                                </td>
+                                <td>@item.ProductName</td>
+                                <td>@item.Price.ToString("#,##0 đ")</td>
+                                <td>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <a class="btn btn-sm btn-outline-secondary" asp-action="Increase" asp-controller="Cart" asp-route-id="@item.ProductId">+</a>
+                                        <input class="form-control mx-2 text-center" style="width: 60px;" type="text" value="@item.Quantity" readonly />
+                                        <a class="btn btn-sm btn-outline-success" asp-action="Decrease" asp-controller="Cart" asp-route-id="@item.ProductId">-</a>
+                                    </div>
+                                </td>
+                                <td>
+                                    @* @(item.Quantity * item.Price).ToString("#,##0 đ") *@
+                                    @(((decimal)(item.Quantity * item.Price)).ToString("#,##0 đ"))
+
+                                </td>
+                                <td>
+                                    <a class="btn btn-sm btn-danger" asp-action="Remove" asp-controller="Cart" asp-route-id="@item.ProductId">
+                                         X
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Tổng kết và thanh toán -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="border p-3 mb-3">
+                        <h5>Thông tin giao hàng</h5>
+                        <div class="form-group">
+                            <label>Tỉnh/ Thành phố:</label>
+                            <select class="form-control" id="tinh" name="tinh">
+                                <option value="0">Chọn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Quận/ Huyện:</label>
+                            <select class="form-control" id="quan" name="quan">
+                                <option value="0">Chọn</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Phường/ Xã:</label>
+                            <select class="form-control" id="phuong" name="phuong">
+                                <option value="0">Chọn</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-info btn-add-shipping">Tính phí ship</button>
+                        <p class="mt-2">
+                            <a asp-action="RemoveShippingCookies" asp-controller="Cart">Xóa phí vận chuyển</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border p-3">
+                        <h5>Tóm tắt đơn hàng</h5>
+                        <p><strong>Tổng:</strong> @Model.GrandTotal.ToString("#,##0 đ")</p>
+                        <p><strong>Phí vận chuyển:</strong> @Model.ShippingCost.ToString("#,##0 đ")</p>
+                        <hr />
+                        <p>
+                            <strong>Thành tiền:</strong> @(((decimal)(Model.GrandTotal + Model.ShippingCost)).ToString("#,##0 đ"))
+                        </p>
+
+                        <div class="form-group mt-3">
+                            <label>Chọn phương thức thanh toán:</label>
+                            <select class="form-control" name="paymentMethod" id="paymentMethod">
+                                <option value="COD">Thanh toán khi nhận hàng</option>
+                                <option value="VNPAY">Thanh toán qua VnPay</option>
+                            </select>
+                        </div>
+
+                        @if (User.Identity?.IsAuthenticated ?? false)
+                        {
+                            <form method="POST" asp-action="Checkout" asp-controller="Checkout">
+                                <input type="hidden" name="paymentMethod" id="selectedPaymentMethod" value="COD" />
+                                <button class="btn btn-primary btn-block mt-3" type="submit">Đặt hàng</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <p class="text-danger mt-3">Vui lòng đăng nhập để đặt hàng.</p>
+                        }
+
+                        <form method="POST" asp-action="CreatePaymentUrlVnpay" asp-controller="Payment" class="mt-2">
+                            <input type="hidden" name="Name" value="@User.Identity.Name" />
+                            <input type="hidden" name="Amount" value="@(Model.GrandTotal + Model.ShippingCost)" />
+                            <input type="hidden" name="OrderDescription" value="Thanh toán qua VnPay" />
+                            <input type="hidden" name="OrderType" value="other" />
+                            <button class="btn btn-success" type="submit">Thanh toán ngay với VnPay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <a class="btn btn-danger" asp-action="Clear" asp-controller="Cart">Xóa tất cả</a>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">Không có sản phẩm trong giỏ hàng</div>
+        }
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Sync payment method
+        $('#paymentMethod').change(function () {
+            $('#selectedPaymentMethod').val($(this).val());
+        });
+
+        $(".btn-add-shipping").click(function () {
+            var tinh = $("#tinh option:selected").text();
+            var quan = $("#quan option:selected").text();
+            var phuong = $("#phuong option:selected").text();
+
+            if (tinh == '' || quan == '' || phuong == '') {
+                Swal.fire("Vui lòng không bỏ trống.");
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("GetShipping", "Cart")",
+                    data: { tinh: tinh, quan: quan, phuong: phuong },
+                    success: function (result) {
+                        if (result) {
+                            location.reload();
+                        }
+                    }
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            $.getJSON('https://esgoo.net/api-tinhthanh/1/0.htm', function (data_tinh) {
+                if (data_tinh.error == 0) {
+                    $.each(data_tinh.data, function (key, val) {
+                        $("#tinh").append('<option value="' + val.id + '">' + val.full_name + '</option>');
+                    });
+
+                    $("#tinh").change(function () {
+                        var idtinh = $(this).val();
+                        $.getJSON('https://esgoo.net/api-tinhthanh/2/' + idtinh + '.htm', function (data_quan) {
+                            if (data_quan.error == 0) {
+                                $("#quan").html('<option value="0">Quận Huyện</option>');
+                                $("#phuong").html('<option value="0">Phường Xã</option>');
+                                $.each(data_quan.data, function (key, val) {
+                                    $("#quan").append('<option value="' + val.id + '">' + val.full_name + '</option>');
+                                });
+
+                                $("#quan").change(function () {
+                                    var idquan = $(this).val();
+                                    $.getJSON('https://esgoo.net/api-tinhthanh/3/' + idquan + '.htm', function (data_phuong) {
+                                        if (data_phuong.error == 0) {
+                                            $("#phuong").html('<option value="0">Phường Xã</option>');
+                                            $.each(data_phuong.data, function (key, val) {
+                                                $("#phuong").append('<option value="' + val.id + '">' + val.full_name + '</option>');
+                                            });
+                                        }
+                                    });
+                                });
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,57 @@
+﻿@model ProductModel
+@{
+    ViewData["title"] = "Cập Nhật Sản Phẩm";
+}
+<h2 class="my-4 text-center">CẬP NHẬT SẢN PHẨM</h2>
+<div class="col-md-9">
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id"/>
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <div class="form-group">
+            <label>Tên Sản Phẩm</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Giá</label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Mô Tả</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger" />
+        </div>
+        <div class="form-group">
+            <label>Loại</label>
+            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.Categories">
+                <option>--Chọn loại--</option>
+            </select>
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Thương Hiệu</label>
+            <select asp-for="BrandId" class="form-control" asp-items="ViewBag.Brands">
+                <option>--Chọn thương hiệu--</option>
+            </select>
+            <span asp-validation-for="BrandId" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label>Hình Sản Phẩm</label>
+            <input asp-for="ImageUpload" class="form-control-file" />
+            <span asp-validation-for="ImageUpload" class="text-danger"></span>
+            <img src="~/media/products/@Model.Image" width="120">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Sửa</button>
+        </div>
+    </form>
+    <a asp-action="Index">Quay về</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

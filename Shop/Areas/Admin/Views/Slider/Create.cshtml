@@ -1,0 +1,49 @@
+﻿@model SliderModel
+@{
+    ViewData["title"] = "Thêm hình ảnh";
+}
+<h2 class="my-4 text-center">THÊM HÌNH ẢNH</h2>
+<div class="col-md-9">
+    <form asp-action="Create" asp-controller="Slider" enctype="multipart/form-data">
+        <div asp-validation-summary="ModelOnly" class="text-danger">
+        </div>
+        <div class="form-group">
+            <label>Tên</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        
+        
+        <div class="form-group">
+            <label>Trạng thái</label>
+            <select asp-for="Status" class="form-control">
+                <option value="1">Hiển thị</option>
+                <option value="0">Ẩn</option>
+            </select>
+
+        </div>
+        
+        <div class="form-group">
+            <label>Hình ảnh</label>
+            <input asp-for="ImageUpload" class="form-control-file" />
+            <span asp-validation-for="ImageUpload" class="text-danger"></span>
+            <img id="imgpreview" class="pt-2" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary">Thêm</button>
+        </div>
+    </form>
+    <a asp-action="Index">Quay về</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+    <script>
+        $("#ImageUpload").change(function(){
+            readURL(this);
+        })
+
+    </script>
+}

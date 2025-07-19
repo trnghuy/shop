@@ -1,0 +1,63 @@
+﻿@model IEnumerable<OrderModel>
+@{
+    ViewData["title"] = "Danh sách đặt hàng " + " " + ViewBag.UserEmail;
+}
+<h3>DANH SÁCH ĐẶT HÀNG </h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Mã đơn hàng</th>
+            <th>Tài khoản</th>
+            <th>Trạng thái</th>
+            <th>Phương thức thanh toán</th>
+            <th>Ngày đặt</th>
+            <th></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.OrderCode</td>
+                <td>@item.UserName</td>
+
+                <td>
+                    @if (@item.Status == 1)
+                    {
+                        <span class="text text-success">Đơn hàng mới</span>
+                    }
+                    else if (@item.Status == 2)
+                    {
+                        <span class="text text-danger">Đã xử lý</span>
+                    }
+                    else {
+                        <span class="text text-danger">Đã huỷ</span>
+                    }
+                </td>
+                <td>
+                    @if(item.PaymentMethod == "COD")
+                    {
+                        <span class="text text-primary"> @item.PaymentMethod </span>
+                    }
+                    else if (item.PaymentMethod != "COD")
+                    {
+                        <span class="text text-danger"> @item.PaymentMethod </span>
+                    }
+                </td>
+                <td>@item.CreatedDate.ToString("dd/MM/yyyy HH:mm:ss")</td>
+                <td>
+                    @if (@item.Status != 3)
+                    {
+
+                    
+                    <a class="btn btn-danger btn-sm" asp-action="CancelOrder" asp-controller="Account" asp-route-ordercode="@item.OrderCode">Huỷ Đơn Hàng</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
